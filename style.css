@@ -108,6 +108,14 @@ nav a.active{
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #8404ec;
     }
+    span {
+        display: inline-block;
+        max-width: 200px;
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+        vertical-align: top;
+    }
 }
 
 .menu-toggle {
@@ -369,11 +377,4 @@ span{
     }
 }
 
-span {
-  display: inline-block;
-  max-width: 200px;
-  overflow: hidden;
-  white-space: normal;
-  text-overflow: ellipsis;
-  vertical-align: top;
-}
+
