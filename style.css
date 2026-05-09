@@ -530,8 +530,7 @@ span {
 @media (max-width: 768px) {
     header {
         padding: 1rem 6%;
-        backdrop-filter: none;
-        filter: none;
+        backdrop-filter: blur(10px);
     }
 
     .logo {
