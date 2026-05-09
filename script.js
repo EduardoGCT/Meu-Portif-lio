@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
 // Atualiza o item ativo conforme o scroll
 const navLinks = Array.from(document.querySelectorAll('nav a'));
 const trackedSections = Array.from(
-    document.querySelectorAll('main section, footer#contacts')
+    document.querySelectorAll('main section, section#contato, footer#footer')
 );
 const headerEl = document.querySelector('header');
 
@@ -70,6 +70,13 @@ const revealGroups = [
     { selector: '.titulo-section, .sobre-txt, .sobre-info-extra', baseDelay: 0, step: 90 },
     { selector: '.sobre-conteudo', baseDelay: 0, step: 0, className: 'reveal-left' },
     { selector: '.terminal-widget', baseDelay: 120, step: 0, className: 'reveal-right reveal-pop' },
+    { selector: '.project-row:not(.project-row--reverse) .project-media', baseDelay: 0, step: 120, className: 'reveal-left' },
+    { selector: '.project-row:not(.project-row--reverse) .project-content', baseDelay: 80, step: 120, className: 'reveal-right' },
+    { selector: '.project-row--reverse .project-media', baseDelay: 0, step: 120, className: 'reveal-right' },
+    { selector: '.project-row--reverse .project-content', baseDelay: 80, step: 120, className: 'reveal-left' },
+    { selector: '.contato-card', baseDelay: 0, step: 0, className: 'reveal-pop' },
+    { selector: '.contato .titulo-section, .contato-text', baseDelay: 60, step: 90 },
+    { selector: '.contact-links a', baseDelay: 140, step: 90, className: 'reveal-pop' },
     { selector: 'footer#contacts', baseDelay: 0, step: 0 }
 ];
 
