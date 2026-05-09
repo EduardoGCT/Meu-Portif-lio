@@ -921,6 +921,10 @@ span {
     .terminal-widget {
         margin-top: 0;
         border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        max-height: 50vh;
         overflow: hidden;
     }
 
@@ -942,6 +946,13 @@ span {
         overflow: visible; 
         display: block; 
         position: relative;
+    }
+    .terminal-widget {
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        max-height: 40vh;
+        overflow: hidden;
     }
     .titulo-section {
         font-size: 1.7rem;
