@@ -116,6 +116,16 @@ body.js-enabled .reveal.reveal-pop.is-visible {
     }
 }
 
+@keyframes cta-float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
 header {
     margin-top: 0;
     position: fixed;
@@ -598,7 +608,7 @@ span {
     }
 
     body.page-loaded .home .btn {
-        animation: hero-up-lite 600ms ease both;
+        animation: hero-up-lite 600ms ease both, cta-float 3.2s ease-in-out 1s infinite;
     }
 }
 
