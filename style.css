@@ -608,7 +608,11 @@ span {
     }
 
     body.page-loaded .home .btn {
-        animation: hero-up-lite 600ms ease both, cta-float 3.2s ease-in-out 1s infinite;
+        animation: none;
+    }
+
+    .home .btn.reveal.is-visible {
+        animation: cta-float 3.2s ease-in-out 0.6s infinite;
     }
 }
 
