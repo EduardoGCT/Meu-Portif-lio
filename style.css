@@ -1170,6 +1170,7 @@ span {
 
 .project-btn{
     display: flex;
+    flex-direction: row;
     gap: 10px;
 }
 
@@ -1408,6 +1409,12 @@ span {
 
     .project-link {
         width: 100%;
+    }
+
+    .project-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     }
 }
 
